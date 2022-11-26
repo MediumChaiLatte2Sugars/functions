@@ -3,7 +3,7 @@ const findWaldo = function(names, found) {
   for (let i = 0; i < names.length; i++) {
     let name = names[i];
     if (name === "Waldo") {
-      found();   // execute callback
+      found(i);   // execute callback
     }
   }
 }
